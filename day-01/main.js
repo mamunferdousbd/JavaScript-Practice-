@@ -79,3 +79,21 @@ Create the function to make the code work.
 //     console.log(result);
 //  }
 //  callVariable();
+/**++++++++++++++++++++++++++++++++++++++++++++++++
+ * Write a JavaScript function that reverse a number
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+ function main(){
+    var number = parseFloat(prompt("Enter a Number.\n Which you need to reverse "));
+    reverseNumber(number);
+ }
+ function reverseNumber(number){
+    var number = number.toString();
+    var number = number.split("");
+    var number= number.reverse();
+    var final = number.join("");
+    console.log(final);
+
+ }
+ main();
